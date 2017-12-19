@@ -1,19 +1,85 @@
-body {
-background:#FFE4C4 url (images/bg.jpg) repeat-x;
+body 
+{
+background: red url (images/bg.jpg) repeat-x;
 }
 
 #wrap
 {
-  width: 700px;
-    margin: 0px auto 15px auto;
-  font- family:Verdana, Arial, Helvetica, sans-serif;
+  width: 200px;
+  margin: 0px auto 15px auto;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
   color: #666666;
 }
 
 /* Header */
-#header {
-height : 242PX;
-  margin: 0px auto 15px auto;
-  font- family:Verdana, Arial, Helvetica, sans-serif;
-  color: 	#2F4F4F0;
+#header 
+{
+
+background:url(Images/Zul_Jin_Renders5.jpg) no-repeat left top;
+	clear: both;
 }
+/* Header Menu */
+
+#topbar
+{
+height: 78px;
+}
+#topmenu
+{
+display: block;
+	list-style-type: none;
+	padding:0px 0px 0px 275px;
+	float: right;
+	width: 600px;
+}
+
+#topmenu li 
+{
+display: inline;
+}
+#topmenu a 
+{
+display: block;
+	float: left;
+	height: 28px;
+	margin: 0px 0px 0px;
+	text-decoration: none;
+	padding: 9px 15px 0px 15px;
+	text-align: center;
+}
+#topmenu a, #topmenu a:visited, #topmenu a:active 
+{
+	color: dimgrey;
+}
+#topmenu a:hover
+{
+	color: black;
+}
+#topmenu.active a, #topmenu .active a:visited, #topmenu .active a:active
+{
+	color: antiquewhite;
+}
+
+/*Content */
+#content 
+{
+	background-color: antiquewhite;
+}
+mainpage
+{
+	width:700px;
+	float: left;
+	padding: 5px 5px 5px 0px;
+	height: auto;
+}
+#menus
+{
+	
+	
+}
+
+
+
+
+
+
