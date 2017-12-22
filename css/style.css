@@ -31,13 +31,9 @@ tiles{
 .tiles{
 
 	float: left;
-
 	width: 300px;
-	
-	
-	margin: 20px;
-	margin-bottom: 20
-		px;
+	background-color: aqua;
+
 } 
 
 .tiles img
