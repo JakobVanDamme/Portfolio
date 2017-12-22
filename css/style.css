@@ -5,7 +5,7 @@ General
 	width: 80%;
 	font-family: raleway,Helvetica,Arial,serif;
 	color: #666666;
-	position: fixed;
+	position: absolute;
 	transform: translate(10%, 0%);
 
 }
@@ -24,7 +24,7 @@ margin: 0px;
 }
 tiles{
 
-		align-content: center;
+	
 	
 	
 }
@@ -35,8 +35,9 @@ tiles{
 	width: 300px;
 	
 	
-	margin: 5px;
-	margin-bottom: 5px;
+	margin: 20px;
+	margin-bottom: 20
+		px;
 } 
 
 .tiles img
@@ -48,7 +49,6 @@ tiles{
 .subtext
 {
 clear: left;
-
 }
 
 
@@ -115,6 +115,14 @@ list-style: none;
 	
 
 }
+menu a, menu a:visited, menu a:active 
+{
+	color: darkgrey;
+}
+menu a:hover
+{
+	color: black;
+}
 
 menu li a {
 	margin-left: 0px;
@@ -122,6 +130,11 @@ menu li a {
 	color: #A9A9A9;
 	text-decoration: none;
 	transition: all 0.1s linear;
+}
+
+active a, active a:visited, active a:active
+{
+	color: darkgrey;
 }
 /* Header Menu */
 
@@ -150,18 +163,8 @@ display: block;
 	padding: 9px 15px 0px 15px;
 	text-align: center;
 }
-topmenu a, #topmenu a:visited, #topmenu a:active 
-{
-	color: darkgrey;
-}
-a:hover
-{
-	color: black;
-}
-active a, active a:visited, active a:active
-{
-	color: darkgrey;
-}
+
+
 
 /*Content */
 content 
@@ -242,6 +245,7 @@ table, th, td
 {
 	border: px solid red;
 border-collapse: collapse;
+	text-transform: uppercase;
 	
 	text-align: left;
 }
