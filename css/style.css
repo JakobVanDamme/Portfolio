@@ -31,15 +31,15 @@ tiles{
 .tiles{
 
 	float: left;
-	width: 300px;
-	background-color: aqua;
+	width: 384px;
+	padding: 5px;
 
 } 
 
 .tiles img
 {
 	width: 100%;
-	height:auto;
+	height:216px;
 	
 }
 .subtext
