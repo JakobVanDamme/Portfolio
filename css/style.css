@@ -72,7 +72,7 @@ list-style: none;
 }
 menu a, menu a:visited, menu a:active 
 {
-	color: darkgrey;
+	color: black;
 }
 menu a:hover
 {
@@ -98,23 +98,17 @@ container{
 	align-content: center;
 }
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+position:relative;
+height:inherit;
+width: inherit;
+opacity: 0;
+transition: .5s ease;
+background-color: black;
 }
 .tiles:hover .overlay {
-  opacity: 1;
+  opacity: .5;
 }
 .tiles:hover{
-
-
 }
 .tiles{
 
@@ -124,12 +118,33 @@ container{
 	padding: 5px;
 
 } 
+.image{
+
+	float: left;
+	width: 384px;
+	height:216px;
+	
+
+} 
 
 .tiles img:hover
 {
 	width: 384px;
 	
 }
+.text
+{
+	opacity: 1;
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-style:none;
+	padding: 40px;
+	position: absolute;
+	text-align: left;
+}
+
 
 .subtext
 {
