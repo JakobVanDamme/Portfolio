@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* general side margin +  lettertype */
 General
 {
 	
@@ -10,47 +11,18 @@ General
 
 }
 
-/* Header */
+/* Header title */
 header 
 {
 margin: 0px;
 	padding: 0px;
 	position:relative;
-
-
 	height:auto;
 	z-index: 5;
 	border-color: #000000;
 }
-tiles{
 
-	
-	
-	
-}
-.tiles{
-
-	float: left;
-	width: 384px;
-	padding: 5px;
-	transform: translate(20%)
-
-} 
-
-.tiles img
-{
-	width: 100%;
-	height:216px;
-	
-}
-.subtext
-{
-clear: left;
-}
-
-
-
-
+/* navigation */
 
 .home {
 	font-family: raleway,Helvetica,Arial,serif;
@@ -59,14 +31,14 @@ clear: left;
 	font-size: 35px;
 	margin-top: 10px;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 	transition: all  linear;
 
 }
+
 .underline 
 {
 	list-style-type: none;
-
 	text-decoration: none;
 	position: relative;
 	margin: 0px;
@@ -75,29 +47,15 @@ clear: left;
 	border-bottom: 1px solid dimgray;
 }
 
-.home_sub {
-	font-family: raleway,Helvetica,Arial,serif;
-	display: inline-block;
-	font-size: 17px;
-	text-align: left;
-	float:left;
-	margin-top: -50px;
-	letter-spacing: 0px;
-	color: #A9A9A9;
-	text-decoration: none;
-	font-weight: normal;
-	background-color: orange;
-}
-
 menu
 {
 
 	list-style: none;
-	font-family: Helvetica,Arial,serif;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
+	font-family: raleway,Helvetica,Arial,serif;
+	margin: 0px;
+	padding: 0px;
 	margin-top: -30px;
-	letter-spacing: 3px;
+	letter-spacing: 5px;
 	font-weight: normal;
 	text-transform: uppercase;
 	
@@ -133,8 +91,50 @@ active a, active a:visited, active a:active
 {
 	color: darkgrey;
 }
-/* Header Menu */
 
+container{
+	width: 100%;
+	position: absolute;
+	align-content: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.tiles:hover .overlay {
+  opacity: 1;
+}
+.tiles:hover{
+
+
+}
+.tiles{
+
+	float: left;
+	width: 384px;
+	height:216px;
+	padding: 5px;
+
+} 
+
+.tiles img:hover
+{
+	width: 384px;
+	
+}
+
+.subtext
+{
+clear: left;
+}
 
 topmenu
 {
@@ -255,11 +255,7 @@ table#t1
 
 	
 
-menus
-{
-	
-	
-}
+
 
 
 
