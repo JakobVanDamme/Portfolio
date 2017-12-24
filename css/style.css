@@ -298,7 +298,29 @@ table#t1
 contact{
 	padding: 5px;
 }
-
+nextproject
+{
+position: fixed;
+bottom: 30%;
+right: 2%;
+	
+}
+nextproject:hover
+{
+	opacity: .5;
+}
+previousproject
+{
+position: fixed;
+bottom: 30%;
+left: 2%;
+	
+}
+previousproject:hover
+{
+		opacity: .5;
+	
+}
 	
 
 
