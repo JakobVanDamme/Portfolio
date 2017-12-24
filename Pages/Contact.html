@@ -8,17 +8,17 @@
 	<script>
 		function ValidateForm()
 		{
-			if (document.form["myForm"]["fname"].value==null || document.form["myForm"]["fname"].value == "")
+			if (document.form["MyForm"]["fname"].value==null || document.form["myForm"]["fname"].value == "")
 		}
 		alert("First name must be filled out");
 			return false;
 					{
-			if (document.form["myForm"]["lname"].value==null || document.form["myForm"]["lname"].value == "")
+			if (document.form["MyForm"]["lname"].value==null || document.form["myForm"]["lname"].value == "")
 		}
 		alert("Last name must be filled out");
 			return false;
 								{
-			if (document.form["myForm"]["email"].value==null || document.form["myForm"]["email"].value == "")
+			if (document.form["MyForm"]["email"].value==null || document.form["myForm"]["email"].value == "")
 		}
 		alert("Email must be filled out");
 			return false;
@@ -45,18 +45,16 @@
 	<form>
 		validation
 		<form name= "MyForm" onSubmit="return ValidateForm()">
-		
 		<h3>FIRST NAME: </h3>
-	<input type ="text" name="fname">
+		<input type ="text" name="fname">
 		<h3>LAST NAME: </h3>
-	<input type ="text" name="lname">
-	
-				<h3>E-MAILADRESS: </h3>
-	<input type ="email" name="email">
+		<input type ="text" name="lname">
+		<h3>E-MAILADRESS: </h3>
+		<input type ="email" name="email">
 		<h3>INTEREST: </h3>
-		 <input type ="radio" name="interest" value = "Games" > Games <br>
-				 <input type ="radio" name="interest" value = "advertisement" > advertisement <br>
-				 <input type ="radio" name="interest" value = "architecture" > architecture <br>
+		<input type ="radio" name="interest" value = "Games" > Games <br>
+		<input type ="radio" name="interest" value = "advertisement" > advertisement <br>
+		<input type ="radio" name="interest" value = "architecture" > architecture <br>
 		<br>
 	  <input type ="submit" value="Submit">
 		
