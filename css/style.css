@@ -182,70 +182,17 @@ position: relative;
 	text-align: left;
 }
 
-
 .subtext
 {
 clear: left;
 }
 
-topmenu
-{
-display: block;
-
-	list-style-type: none;
-	padding:30px 30px 30px 30px;
-	float: right;
-	width: auto;
-}
-
-topmenu li 
-{
-display: inline;
-}
-topmenu a 
-{
-display: block;
-	float: left;
-	height: 28px;
-	margin: 0px 0px 0px;
-	text-decoration: none;
-	padding: 9px 15px 0px 15px;
-	text-align: center;
-}
 
 
-
-/*Content */
-content 
-{
-	background-color: antiquewhite;
-}
-mainpage
-{
-	width:700px;
-	float: left;
-	padding: 5px 5px 5px 0px;
-	height: auto;
-}
-mainpage p {
-	line-height: 22px;
-	margin: 10px 0px 22px 0px;
-	text-align: justify;
-}
-mainpage blockquote {
-	
-background: #efefef;
-	display: block;
-	margin: 5px;
-	font-style: italic;
-}
 h1,h2,h3,h4,h5{
 	color:#1D1D1D;
 	font-weight: bolder;
 	font-family: raleway, Helvetica, sans-serif;
-}
-#mainpage h1 {
-font-size: 24px;
 }
 h2 {
 font-size: 18px;
@@ -260,18 +207,7 @@ font-size: 18px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #282828;
 }
-mainpage h3 {
-font-size: 20px;
-}
-mainpage h4 {
-font-size: 18px;
-}
-mainpage h5 {
-font-size: 16px;
-}
-mainpage p {
-font-size: 12px;
-}
+
 /*footer*/
 footer
 {
@@ -281,14 +217,9 @@ width: 100%;
 	padding: 0px;
 	color:grey;
 	text-align: center;
-
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	clear: both;
-}
-topbar
-{
-height: 78px;
 }
 
 table, th, td 
@@ -300,7 +231,6 @@ border-collapse: collapse;
 }
 .left{
 		border: px solid red;
-
 	text-transform: uppercase;
 	text-align: left;
 }
@@ -343,7 +273,7 @@ previousproject:hover
 	
 }
 	
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1200px) {
 header {
 		width: 85%;
 		transform: translate(10%, 0%);
