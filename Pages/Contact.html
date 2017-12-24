@@ -4,6 +4,15 @@
 <head>
 <title>Karambit</title>
 <link href="../css/style.css" rel = "stylesheet" typ="../text/css">
+	
+	<script>
+		function ValidateForm()
+		{
+			if (document.form["myForm"]["fname"].value==null || document.form["myForm"]["fname"].value == "")
+		}
+		alert("Name must be filled out");
+			return false;
+		</script>
 </head>
 
 <general>
@@ -22,7 +31,11 @@
 		<br>
 		<h2 id="about me">Contact</h2>
 		
+	<contact>
 	<form>
+		validation
+		<form name= "MyForm" onSubmit="return ValidateForm()">
+		
 		<h3>FIRST NAME: </h3>
 	<input type ="text" name="fname">
 		<h3>LAST NAME: </h3>
@@ -36,7 +49,9 @@
 				 <input type ="radio" name="interest" value = "architecture" > architecture <br>
 		<br>
 	  <input type ="submit" value="Submit">
-	
+		
 </form>
+</form>
+</contact>
 </general>
 </html>
