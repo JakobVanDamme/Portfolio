@@ -2,7 +2,7 @@
 /* general side margin +  lettertype */
 General
 {
-	top: 150px;
+	top: 90px;
 	width: 80%;
 	font-family: raleway,Helvetica,Arial,serif;
 	color: #666666;
@@ -25,7 +25,7 @@ header
 	height: auto;
 	z-index: 1;
 	opacity: 1;
-	background-color: white;
+	background-color: white;opacity: .85;
 
 }
 
@@ -60,16 +60,17 @@ header
 	border-bottom: 1px solid dimgray;
 }
 
-menu
+
+menu ul a
 {list-style: none;
 	font-family: raleway,Helvetica,Arial,serif;
 	display: inline-block;
-	float: left;
-	margin: 0px;
-	padding: 0px;
-	margin-top: 0px;
-	letter-spacing: 5px;
 	float: right;
+	margin: 20px;
+	padding: 0px;
+	margin-top: 10px;
+	letter-spacing: 3px;
+	
 	font-weight: normal;
 	text-transform: uppercase;
 	
@@ -86,7 +87,7 @@ list-style: none;
 }
 menu a, menu a:visited, menu a:active 
 {
-	color: black;
+
 }
 menu a:hover
 {
@@ -100,11 +101,11 @@ menu li a {
 	text-decoration: none;
 	transition: all 0.1s linear;
 }
-menucontainer
+menunderline
 {
 	width: 100%;
 	
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 
 	bottom: 0px;
 	left: 0px;
@@ -274,6 +275,16 @@ previousproject:hover
 }
 	
 @media only screen and (max-width: 1200px) {
+	General
+{
+	top: 200px;
+	width: 80%;
+	font-family: raleway,Helvetica,Arial,serif;
+	color: #666666;
+	position: absolute;
+	transform: translate(10%, 0%);
+
+}
 header {
 		width: 85%;
 		transform: translate(10%, 0%);
@@ -302,11 +313,11 @@ header {
 	letter-spacing: 3px;
 	transition: all  linear;
 }
-		menu
+		menu ul a
 {list-style: none;
 	font-family: raleway,Helvetica,Arial,serif;
-display: inline-block;
-float: left;
+	display: inline-block;
+	float: left;
 	width: 100%;
 	left: 0px;
 	margin: 0px;
@@ -347,79 +358,7 @@ position: relative;
 	width: 100%;
 	
 }
-@media only screen and (max-width: 800px) {	
-	
-	header {
-		width: 85%;
-		transform: translate(10%, 0%);
-		text-align: center;
-		min-height: auto;
-		height: auto;
-		padding: 0px;
-		margin: 0px;
-		z-index: 5;
-		border-bottom: 1px solid rgba(252,252,252,0.1);
-		position: absolute;
-		background-color: white
-	}
-	.home {
-	font-family: Helvetica,Arial,serif;
-	float: left;
-		display: inline-block;
-		text-align: center;
-	font-weight: 900;
-	text-decoration: none;
-	color:#131313;
-	font-size: 35px;
-	margin-top: 10px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	transition: all  linear;
-}
-	menu
-{list-style: none;
-	font-family: raleway,Helvetica,Arial,serif;
-display: inline-block;
-float: left;
-	width: 100%;
-	left: 0px;
-	margin: 0px;
-	padding: 0px;
-	margin-top: 0px;
-	letter-spacing: 5px;
-	text-align: center;
-	font-weight: normal;
-	text-transform: uppercase;
-	
-	
-}
-menu ul li {
-list-style: none;
-	text-decoration: none;
-	margin-left: 0px;
-	padding-left: 0px;
-	
-	
 
-}
-menu a, menu a:visited, menu a:active 
-{
-	color: black;
-}
-menu a:hover
-{
-	color: black;
-}
-
-menu li a {
-	margin-left: 0px;
-	padding-left:  0px;
-	color: #A9A9A9;
-	text-decoration: none;
-	transition: all 0.1s linear;
-}
-	
-	}
 }
 
 
