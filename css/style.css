@@ -2,7 +2,7 @@
 /* general side margin +  lettertype */
 General
 {
-	
+	top: 150px;
 	width: 80%;
 	font-family: raleway,Helvetica,Arial,serif;
 	color: #666666;
@@ -12,17 +12,20 @@ General
 }
 
 /* Header title */
+
 header 
 {
-margin: 0px;
+	width: 80%;
+	transform: translate(10%, 0%);
+	margin: 0px;
 	padding: 0px;
 	left: 0;
 	top:0;
 	position:fixed;
-	height: 150px;
-	width: 100%;
-	z-index: -1;
-	opacity: .3;
+	height: auto;
+	z-index: 1;
+	opacity: 1;
+	background-color: white;
 
 }
 
@@ -30,7 +33,7 @@ margin: 0px;
 
 .home {
 	font-family: Helvetica,Arial,serif;
-
+	float: left;
 	font-weight: 900;
 	text-decoration: none;
 	color:#131313;
@@ -49,7 +52,8 @@ margin: 0px;
 {
 	list-style-type: none;
 	text-decoration: none;
-	position: relative;
+	
+	
 	margin: 0px;
 	padding: 0px;
 	border-left: 0px;
@@ -57,14 +61,15 @@ margin: 0px;
 }
 
 menu
-{
-
-	list-style: none;
+{list-style: none;
 	font-family: raleway,Helvetica,Arial,serif;
+	display: inline-block;
+	float: left;
 	margin: 0px;
 	padding: 0px;
 	margin-top: 0px;
 	letter-spacing: 5px;
+	float: right;
 	font-weight: normal;
 	text-transform: uppercase;
 	
@@ -95,7 +100,23 @@ menu li a {
 	text-decoration: none;
 	transition: all 0.1s linear;
 }
+menucontainer
+{
+	width: 100%;
+	
+	margin-bottom: 5px;
 
+	bottom: 0px;
+	left: 0px;
+	position:fixed;
+
+	height: auto;
+	z-index: 1;
+	opacity: 1;
+		border-bottom: 1px solid dimgray;
+	background-color: white;
+	
+}
 active a, active a:visited, active a:active
 {
 	color: darkgrey;
@@ -322,9 +343,50 @@ previousproject:hover
 	
 }
 	
+@media only screen and (max-width: 640px) {
+header {
+		width: 85%;
+		transform: translate(10%, 0%);
+		text-align: center;
+		min-height: auto;
+		height: auto;
+		padding: 0px;
+		margin: 0px;
+		z-index: 5;
+		border-bottom: 1px solid rgba(252,252,252,0.1);
+		position: absolute;
+		background-color: white
+	}
+	
+.tiles:hover .overlay {
+  opacity: .5;
+}
+.tiles:hover{
+}
+.tiles{
+
+	float: left;
+	width: 100%;
+height: auto;
+	padding: 5px;
+	transform: translate(-5px)
+
+} 
+.image{
+position: relative;
+	float:inherit;
+	width: 100%;
+	height: auto;
+} 
 
 
-
+.tiles img:hover
+{
+	width: 100%;
+	
+}
+	
+}
 
 
 
