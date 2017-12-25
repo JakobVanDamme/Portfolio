@@ -60,13 +60,13 @@
 
       <form name= "myForm"   onsubmit="return validateForm()">
         <h3>FIRST NAME: </h3>
-        <input type ="text" name="fname" />
+        <input type ="text" name="fname" style="border:1px solid dimgray" />
         <h3>LAST NAME: </h3>
-        <input type ="text" name="lname" />
+        <input type ="text" name="lname" style="border:1px solid dimgray" />
         <h3>E-MAILADRESS: </h3>
-        <input type ="text" name="email" />
+        <input type ="text" name="email" style="border:1px solid dimgray" />
         <h3>INTEREST: </h3>
-        <input type ="radio" name="interest" value = "Games" >
+        <input type ="radio" name="interest" value = "Games" >s
         Games <br>
         <input type ="radio" name="interest" value = "advertisement" >
         advertisement <br>
@@ -98,7 +98,8 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 	<br>
 	Belgium
 </map>
-<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+	  <script async defet src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjfYqUjwO7a4W4nmk79rzQ4DPbGE3sKZY&callback=myMap">
+	  </script>
     <footer>
       <p>Copyright jakob van damme &copy; 
         <script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script> 
