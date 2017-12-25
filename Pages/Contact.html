@@ -9,17 +9,17 @@
 <script>
 		function validateForm()
 		{
-			if (document.forms["MyForm"]["fname"].value==null || document.forms["myForm"]["fname"].value == "")
+			if (document.forms["myForm"]["fname"].value==null || document.forms["myForm"]["fname"].value == "")
 			{
 			alert("First name must be filled out");
 			return false;
 			}
-			if (document.forms["MyForm"]["lname"].value==null || document.forms["myForm"]["lname"].value == "")
+			if (document.forms["myForm"]["lname"].value==null || document.forms["myForm"]["lname"].value == "")
 			{
 			alert("Last name must be filled out");
 			return false;
 			}					
-			if (document.forms["MyForm"]["email"].value==null || document.forms["myForm"]["email"].value == "")
+			if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value == "")
 			{
 			alert("Email must be filled out");
 			return false;
@@ -58,13 +58,13 @@
     <contact>
       <form>
       validation
-      <form name= "MyForm"   onsubmit="return validateForm()">
+      <form name= "myForm"   onsubmit="return validateForm()">
         <h3>FIRST NAME: </h3>
         <input type ="text" name="fname" />
         <h3>LAST NAME: </h3>
         <input type ="text" name="lname" />
         <h3>E-MAILADRESS: </h3>
-        <input type ="email" name="email" />
+        <input type ="text" name="email" />
         <h3>INTEREST: </h3>
         <input type ="radio" name="interest" value = "Games" >
         Games <br>
@@ -73,7 +73,7 @@
         <input type ="radio" name="interest" value = "architecture" >
         architecture <br>
         <br>
-        <input type ="submit" value="Submit">
+        <input type ="submit" value="Click to Submit">
       </form>
       </form>
     </contact>
