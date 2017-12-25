@@ -253,7 +253,8 @@ contact{
 nextproject
 {
 position: fixed;
-bottom: 30%;
+	
+bottom: 50%;
 right: 2%;
 	
 }
@@ -263,8 +264,9 @@ nextproject:hover
 }
 previousproject
 {
+	
 position: fixed;
-bottom: 30%;
+bottom: 50%;
 left: 2%;
 	
 }
@@ -347,12 +349,19 @@ height: auto;
 } 
 .image{
 position: relative;
-	float:inherit;
+	float:left;
 	width: 100%;
 	height: auto;
 } 
 
-
+.overlay {
+position:absolute;
+height:97%;
+width: 98%;
+opacity: 0;
+transition: .5s ease;
+background-color: black;
+}
 .tiles img:hover
 {
 	width: 100%;
