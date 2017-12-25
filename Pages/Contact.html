@@ -77,9 +77,27 @@
       </form>
     </contact>
 	  <!-- geolocation -->
-
 	  
+	  <button onclick="showLocation()" > Click </button>
+<script>
+	function showLocation() 
+	{
+		if(navigator.geolocation) 
+		{
+			navigator.geolocation.getCurrentPosition(showPosition);
+		}
+		else
+		{
+			alert{'your browser does not support geolocation'};
+		}
+	}
+	function showPosition() 
+	{
+		alert("Latitude:" + position.coords.latitude + "Logitude: ") + position.coords.logitude:
+		
+	}
 	  
+</script>
     <footer>
       <p>Copyright jakob van damme &copy; 
         <script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script> 
