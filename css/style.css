@@ -250,6 +250,11 @@ table#t1
 contact{
 	padding: 5px;
 }
+#map{
+	right: 0px;
+	align-content: center;
+	
+}
 nextproject
 {
 position: fixed;
@@ -382,9 +387,6 @@ background-color: black;
 {
 	width: 100%;
 	
-}
-
-}
 
 
 
