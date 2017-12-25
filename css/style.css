@@ -15,7 +15,7 @@ General
 
 header 
 {
-	width: 80%;
+	width: 81%;
 	transform: translate(10%, 0%);
 	margin: 0px;
 	padding: 0px;
@@ -288,7 +288,7 @@ previousproject:hover
 
 }
 header {
-		width: 85%;
+		width: 80%;
 		transform: translate(10%, 0%);
 		text-align: right;
 		min-height: auto;
