@@ -248,12 +248,15 @@ table#t1
 	background-color: yellow;
 }
 contact{
+	float: left;
+	position: relative;
 	padding: 5px;
 }
-#map{
-	right: 0px;
-	align-content: center;
-	
+map{
+	width: 500px;
+	float: right;
+	text-align: center;
+	position: relative;
 }
 nextproject
 {
@@ -386,8 +389,25 @@ background-color: black;
 .tiles img:hover
 {
 	width: 100%;
-	
-
+	}
+	contact{
+		width: 100%;
+	align-content: center;
+		text-align: center;
+	position: relative;
+	padding: 5px;
+}
+map{
+	width: 100%;
+	align-content: center;
+	text-align: center;
+	position: relative;
+}
+	h2{
+		
+	text-align: center;
+	}
+}
 
 
 

@@ -57,7 +57,7 @@
 	  
     <contact>
   
-      validation
+
       <form name= "myForm"   onsubmit="return validateForm()">
         <h3>FIRST NAME: </h3>
         <input type ="text" name="fname" />
@@ -78,8 +78,9 @@
  
     </contact>
 	  <!-- geolocation -->
-
-<div id="googleMap" style="width:100%;height:400px;"></div>
+<map>
+	<h3>LOCATION</h3>
+<div id="googleMap" style="height:400px;"></div>
 
 <script>
 function myMap() {
@@ -90,9 +91,14 @@ var mapProp= {
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 </script>
-
+	<br>
+	H.geestmolenstraat 77
+	<br>
+	9160 LOKEREN
+	<br>
+	Belgium
+</map>
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-
     <footer>
       <p>Copyright jakob van damme &copy; 
         <script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script> 
