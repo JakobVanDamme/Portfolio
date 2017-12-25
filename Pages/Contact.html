@@ -24,6 +24,7 @@
 			alert("Email must be filled out");
 			return false;
 			}
+			return true;
 		}
 		</script>
 </head>
@@ -57,7 +58,7 @@
     <contact>
       <form>
       validation
-      <form name= "MyForm"   onSubmit="return validateForm()">
+      <form name= "MyForm"   onsubmit="return validateForm()">
         <h3>FIRST NAME: </h3>
         <input type ="text" name="fname" />
         <h3>LAST NAME: </h3>
