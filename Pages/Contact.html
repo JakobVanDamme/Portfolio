@@ -5,81 +5,85 @@
 <title>Portfolio</title>
 <link href="../css/style.css" rel = "stylesheet" typ="../text/css">
 	
-	<script>
+	<!-- validation script -->
+<script>
 		function validateForm()
 		{
 			if (document.forms["MyForm"]["fname"].value==null || document.forms["myForm"]["fname"].value == "")
-		{
-		alert("First name must be filled out");
+			{
+			alert("First name must be filled out");
 			return false;
-		}
+			}
 			if (document.forms["MyForm"]["lname"].value==null || document.forms["myForm"]["lname"].value == "")
-		{
-		alert("Last name must be filled out");
+			{
+			alert("Last name must be filled out");
 			return false;
-		}					{
+			}					
 			if (document.forms["MyForm"]["email"].value==null || document.forms["myForm"]["email"].value == "")
-		{
-		alert("Email must be filled out");
+			{
+			alert("Email must be filled out");
 			return false;
+			}
 		}
 		</script>
 </head>
+	
+	<!-- next/precious page -->
 <nextproject>
-	<a href= "Karambit.html"> 
-		<img src="../Images/next_Arrow.png" width="50"></a>
-	</nextproject>
-	<previousproject>
-	<a href= "TriumphTr7.html"> 
-		<img src="../Images/previous_Arrow.png" width="50"></a>
-	</previousproject>
-	<header>
-
-<a href = "../index.html" class="home"> 
-		Jakob Van Damme</a> 
-	<menu>
-    <ul>
-      <li > <a href="../index.html#experience">About me </a> </li>
-      <li > <a href="../Pages/UnrealProjects.html">Unreal projects </a> </li>
-      <li > <a href="../Pages/Contact.html">Contact</a> </li>
-	</ul>
-  </menu>
-	<menunderline>
+  <a href= "Karambit.html"> <img src="../Images/next_Arrow.png" width="50"></a>
+  </nextproject>
+<previousproject>
+	 <a href= "TriumphTr7.html"> <img src="../Images/previous_Arrow.png" width="50"></a>
+</previousproject>
+	
+	   <!-- navigation main menu -->
+<header> <a href = "../index.html" class="home"> Jakob Van Damme</a>
+    <menu>
+      <ul>
+        <li > <a href="../index.html#experience">About me </a> </li>
+        <li > <a href="../Pages/UnrealProjects.html">Unreal projects </a> </li>
+        <li > <a href="../Pages/Contact.html">Contact</a> </li>
+      </ul>
+    </menu>
+    <menunderline> 
 	</menunderline>
-	</header>
-	
-<general>
+</header>
+  <general>
+	   <!-- heading of page -->
+    <h2 id="about me">Contact</h2>
+	  
+	  <!-- contact Inputs -->
+	  
+    <contact>
+      <form>
+      validation
+      <form name= "MyForm" onSubmit="return validateForm()">
+        <h3>FIRST NAME: </h3>
+        <input type ="text" name="fname" />
+        <h3>LAST NAME: </h3>
+        <input type ="text" name="lname" />
+        <h3>E-MAILADRESS: </h3>
+        <input type ="email" name="email" />
+        <h3>INTEREST: </h3>
+        <input type ="radio" name="interest" value = "Games" >
+        Games <br>
+        <input type ="radio" name="interest" value = "advertisement" >
+        advertisement <br>
+        <input type ="radio" name="interest" value = "architecture" >
+        architecture <br>
+        <br>
+        <input type ="submit" value="Submit">
+      </form>
+      </form>
+    </contact>
+	  <!-- geolocation -->
 
-	
-		<div class ="underline"> </div>
-		<br>
-		<h2 id="about me">Contact</h2>
-		
-	<contact>
-		
-	<form>
-		validation
-		<form name= "MyForm" onSubmit="return validateForm()">
-		<h3>FIRST NAME: </h3>
-		<input type ="text" name="fname" />
-		<h3>LAST NAME: </h3>
-		<input type ="text" name="lname" />
-		<h3>E-MAILADRESS: </h3>
-		<input type ="email" name="email" />
-		<h3>INTEREST: </h3>
-		<input type ="radio" name="interest" value = "Games" > Games <br>
-		<input type ="radio" name="interest" value = "advertisement" > advertisement <br>
-		<input type ="radio" name="interest" value = "architecture" > architecture <br>
-		<br>
-	  <input type ="submit" value="Submit">
-		
-</form>
-</form>
-</contact>
-	<footer>
-		<p>Copyright jakob van damme &copy;
-			<script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script>
-			</p>
-			</footer>
-</general>
+	  
+	  
+    <footer>
+      <p>Copyright jakob van damme &copy; 
+        <script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script> 
+      </p>
+    </footer>
+  </general>
 </html>
