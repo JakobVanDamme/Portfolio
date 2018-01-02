@@ -15,7 +15,7 @@ General
 
 header 
 {
-	width: 81%;
+	width: 80%;
 	transform: translate(10%, 0%);
 	margin: 0px;
 	padding: 0px;
@@ -44,7 +44,7 @@ header
 	transition: all  linear;
 }
 .home:hover{
-	color:#232323;
+	color:#686868;
 }
 
 
@@ -162,7 +162,7 @@ position: relative;
 
 	float: left;
 	width: 100%;
-	position: absolute;
+	
 } 
 
 .tiles img:hover
@@ -197,6 +197,13 @@ h1,h2,h3,h4,h5{
 }
 h2 {
 font-size: 18px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #282828;
+}
+h3 {
+font-size: 14px;
 	padding-top: 20px;
 	padding-bottom: 5px;
 	text-transform: uppercase;
