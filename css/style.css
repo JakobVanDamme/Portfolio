@@ -212,7 +212,7 @@ font-size: 14px;
 	padding-top: 20px;
 	padding-bottom: 5px;
 	text-transform: uppercase;
-	border-bottom: 1px solid #282828;
+	
 }
 subtext h2 {
 font-size: 18px;
@@ -292,10 +292,24 @@ left: 2%;
 }
 previousproject:hover
 {
+	
 		opacity: .5;
 	
 }
+logos
+{
+		text-transform: uppercase;
+	text-decoration-style: solid;
+	font-display: block;
 	
+}
+.logos
+{
+	
+	padding: 10px;
+width: 100px;	
+	
+}
 @media only screen and (max-width: 1200px) {
 	General
 {
