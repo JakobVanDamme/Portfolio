@@ -61,8 +61,13 @@
 	  
     <contact>
   
-
-      <form name= "myForm"   onsubmit="return validateForm()">
+      <form
+      name="myForm"
+      action="mailto:vandammejakob@gmail.com"
+      method="post"
+      enctype="text/plain"
+      onsubmit="return validateForm()"
+    >
         <h3>FIRST NAME: </h3>
         <input type ="text" name="fname" style="border:1px solid dimgray" />
         <h3>LAST NAME: </h3>
@@ -79,7 +84,10 @@
         <br>
         <input type ="submit" value="Submit">
       </form>
- 
+      <p>
+        Or email me directly:
+        <a href="mailto:vandammejakob@gmail.com">vandammejakob@gmail.com</a>
+      </p>
     </contact>
 	  <!-- geolocation -->
 <map>
@@ -89,21 +97,22 @@
 <script>
 function myMap() {
 var mapProp= {
-    center:new google.maps.LatLng(51.115606,3.972059),
+    center:new google.maps.LatLng(51.03083, 3.66833),
     zoom:12,
 };
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 </script>
 	<br>
-	H.geestmolenstraat 77
+  GHENT
 	<br>
-	9160 LOKEREN
+  Afsnee
 	<br>
 	Belgium
 </map>
 	  <script async defet src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjfYqUjwO7a4W4nmk79rzQ4DPbGE3sKZY&callback=myMap">
 	  </script>
+
     <footer>
       <p>Copyright jakob van damme &copy; 
         <script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script> 
