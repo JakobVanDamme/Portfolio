@@ -438,5 +438,49 @@ map{
 }
 
 
+.skill {
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+	vertical-align: top;
+	margin-right: 10px;
+	position: relative;
+}
 
+.skill .logos {
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	padding: 10px;
+}
 
+.skill span {
+	display: block;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+/* Hover tooltip: shows data-tooltip (same text as alt) */
+.skill::before {
+	content: attr(data-tooltip);
+	position: absolute;
+	left: 50%;
+	bottom: 100%;
+	border-radius: 6px;
+	transform: translateX(-50%);
+	padding: 6px 10px;
+	background: #6f6f7e;
+	color: #fff;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s ease;
+	z-index: 10;
+}
+
+.skill:hover::before {
+	opacity: 1;
+}
