@@ -77,6 +77,34 @@ header {
 	height: auto;
 }
 
+/* Hamburger (hidden on desktop) */
+.nav-toggle {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.hamburger {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
+	width: 36px;
+	height: 36px;
+	padding: 6px;
+	cursor: pointer;
+	z-index: 12;
+}
+
+.hamburger span {
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: #131313;
+	border-radius: 2px;
+	transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
 /* Navigation — centered with the title */
 menu {
 	display: block;
@@ -119,6 +147,24 @@ menu li a {
 
 menu a:hover {
 	color: #000000;
+}
+
+.sketchfab-item {
+	display: flex;
+	align-items: center;
+}
+
+.sketchfab-link {
+	display: inline-flex !important;
+	align-items: center;
+	justify-content: center;
+	padding: 4px !important;
+}
+
+.sketchfab-link img {
+	display: block;
+	width: 32px;
+	height: auto;
 }
 
 menunderline {
@@ -400,7 +446,7 @@ logos {
 /* Mobile */
 @media only screen and (max-width: 1200px) {
 	General {
-		margin-top: 160px;
+		margin-top: 130px;
 		padding: 0 10%;
 		width: 100%;
 		max-width: 100%;
@@ -411,31 +457,86 @@ logos {
 	header {
 		position: fixed;
 		width: 100%;
-		padding: 12px 20px;
+		padding: 14px 20px;
 		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 		text-align: center;
 		transform: none;
+		gap: 12px;
 	}
 
 	.home {
 		float: none;
 		width: auto;
-		font-size: 24px;
+		font-size: 34px;
 		margin: 0;
 		justify-content: center;
+		letter-spacing: 2px;
+	}
+
+	.hamburger {
+		display: flex;
+		margin: 0 auto;
+	}
+
+	/* Animate to X when open */
+	.nav-toggle:checked + .hamburger span:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.nav-toggle:checked + .hamburger span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.nav-toggle:checked + .hamburger span:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	menu {
+		display: none;
+		width: 100%;
+		flex-basis: 100%;
+		padding: 12px 0 8px;
+		border-top: 1px solid #e5e5e5;
+	}
+
+	.nav-toggle:checked ~ menu {
+		display: block;
 	}
 
 	menu ul {
 		width: 100%;
+		flex-direction: column;
 		justify-content: center;
+		align-items: stretch;
+		gap: 0;
+	}
+
+	menu ul li {
+		width: 100%;
+		border-bottom: 1px solid #f0f0f0;
 	}
 
 	menu ul a,
 	menu li a {
 		float: none;
-		width: auto;
+		display: block;
+		width: 100%;
+		padding: 14px 8px;
 		text-align: center;
 		letter-spacing: 2px;
+		font-size: 16px;
+	}
+
+	.sketchfab-item {
+		justify-content: center;
+		padding: 12px 0;
+	}
+
+	.sketchfab-link img {
+		width: 40px;
 	}
 
 	.container {
