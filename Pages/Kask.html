@@ -8,7 +8,7 @@
  PBR, Low poly, high poly, Triumph tr 7, tripod, Portfolio, quality, ">
 <meta name="Description" content="Passionated in 3D, various projects, Went to school in howest Digital arts and entertainement">
 <title>Portfolio</title>
-<link href="../css/style.css" rel = "stylesheet" typ="../text/css">
+<link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
 	<!--Fixed header-->
 <nextproject>
@@ -24,13 +24,12 @@
 <a href = "../index.html" class="home"> 
 		Jakob Van Damme</a> 
 	
-<input type="checkbox" id="nav-toggle" class="nav-toggle">
-<label for="nav-toggle" class="hamburger" aria-label="Open menu">
+<button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
 	<span></span>
 	<span></span>
 	<span></span>
-</label>
-<menu>
+</button>
+<nav id="main-nav" class="main-nav">
     <ul>
       <li > <a href="../index.html#about-me">About me </a> </li>
       <li > <a href="../Pages/UnrealProjects.html">Unreal projects </a> </li>
@@ -42,7 +41,7 @@
         </a>
       </li>
     </ul>
-  </menu>
+  </nav>
 	<menunderline>
 	</menunderline>
 	</header>
@@ -87,4 +86,5 @@
 			</p>
 			</footer>
 </general>
+<script src="../Javascript/nav.js"></script>
 </html>
